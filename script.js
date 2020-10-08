@@ -143,7 +143,7 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
-      if (score >= 7 && score < 10) {
+      if (score >= 7 && score <= 10) {
         mensagem = `<p>Parabéns você realmente conhece muito sobre este assunto.</p>`;
       } else if (score >= 4 && score < 7) {
         mensagem = `<p>Muito bem, você demonstrou conhecer um pouco sobre esse assunto.</p>`;
