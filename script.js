@@ -143,8 +143,6 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
-      console.log(score);
-      console.log(mensagem);
       if (score >= 7 && score < 10) {
         mensagem = `<p>Parabéns você realmente conhece muito sobre este assunto.</p>`;
       } else if (score >= 4 && score < 7) {
@@ -155,9 +153,6 @@ submitBtn.addEventListener("click", () => {
       quiz.innerHTML = `<h2>Você acertou ${score}/${quizData.length} Questões.</h2>
                 ${mensagem}
                 <button onclick="location.reload()">Reload</button>`;
-
-      console.log(score);
-      console.log(mensagem);
     }
   }
 });
