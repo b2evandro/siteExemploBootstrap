@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
     <!-- Required meta tags -->
@@ -9,12 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+
     <title>Banco de Dados</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary ">
         <div class="container ">
             <div>
                 <a class="navbar-brand" href="#"><img src="./img/server-solid.svg" width="40" height="40" alt="..."
@@ -25,13 +25,13 @@
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#conceito">Conceitos</a>
                     </li>
                     <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button"
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Banco
                         </a>
@@ -44,10 +44,10 @@
                         </div>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#quiz">Quiz</a>
+                        <a class="nav-link" href="quiz.html">Quiz</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#contato">Contato</a>
+                        <a class="nav-link" href="#mais">Mais</a>
                     </li>
                 </ul>
             </div>
@@ -71,7 +71,7 @@
         </div>
     </div>
     <main role="main" class="container ">
-
+        
         <div class="blog-post">
             <h2 class="blog-post-title">CONCEITOS FUNDAMENTAIS DE BANCO DE DADOS</h2>
             <p>Os homens mais primitivos utilizavam as pinturas rupestres, ao passo que os egípcios utilizavam
@@ -91,36 +91,211 @@
                 dessa coleção é atender às necessidades de informação de seus usuários, sendo elas a de uma simples
                 consulta ou a de geração de informações ou conhecimento.
             </p>
-            <h2>Banco</h2>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo
-                luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac
-                consectetur ac, vestibulum at eros.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <pre><code>Example code block</code></pre>
-            <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia
-                bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac
-                cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <h2 id="bancorelacional">Banco Relacional</h2>
+            <p>O modelo relacional se destaca pela simplicidade e flexibilidade, utilizando como base os mesmo conceitos
+                dos arquivos de dados. Os dados são armazenados em tabelas que, por sua vez, são compostas de campos e
+                registros.
+            </p>
+            <p>
+                O banco de dados relacional foi criado com base na teoria matemática de conjuntos, e, por isso, seus
+                componentes principais supracitados também podem ser conhecidos por seus correspondentes em linguagem
+                matemática. Os campos podem ser chamados de atributos, os registros são chamados de tuplas, e as tabelas
+                são conhecidas como relação.
+            </p>
+            <p>
+                A estrutura pode se comparada a uma planilha eletrônica, com suas linhas (tuplas) e colunas (atributos).
+                O conteúdo de um conjunto linha-coluna específico é denominado célula, tanto para a planilha eletrônica
+                como para o banco de dados relacional. A célula é responsável por conter o valor do atributo que, por
+                definição, deve ser um valor atômico.
+            </p>
+            <div class="text-center pb-5">
+                <img src="./img/campaign-creators-IKHvOlZFCOg-unsplash.jpg" class="rounded img-fluid img-thumbnail"
+                    width="350" alt="...">
+                <img src="./img/markus-winkler-gLdJnQFcIXE-unsplash.jpg" class="rounded img-fluid img-thumbnail"
+                    width="350" alt="...">
+
+            </div>
+            <h3 id="entidade">
+                Tabelas / Entidades / Relação
+            </h3>
+            <p>
+
+                Todos os dados ficam armazenados nas tabelas de um Banco de Dados Relacional (BDR). A tabela nada mais é
+                do que o próprio nome está sugerindo, sendo esta uma estrutura bidimensional composta de linhas e
+                colunas com seus dados.
+            </p>
+            <p>
+
+                Podemos pensar na tabela como uma representação permanente de uma relação lógica, ou seja, de uma
+                relação cujo conteúdo possa ser salvo definitivamente para uso futuro. Já a palavra entidade, está
+                relacionada a uma tabela que pode conter um grupo de ocorrências de entidades relacionadas, ou seja, um
+                conjunto de entidades. Por exemplo, uma tabela chamada FUNCIONÁRIO contém um conjunto de ocorrências de
+                entidades, cada uma representando um funcionário.
+            </p>
+            <h3 id="atributo">
+
+                Colunas / Atributos / Campos
+            </h3>
+            <p>
+
+                São os campos de um tabela, com nomes diferentes e contém tipos de dados diferentes. Por exemplo: uma
+                tabela FUNCIONÁRIO que contém uma coluna chamada FUNC_NOME.
+            </p>
+
+
+            <h3 id="registros">
+
+                Linhas / Registros / Tuplas
+            </h3>
+            <p>
+
+                Cada linha representa um registro diferente, contendo todos os mesmos atributos dentro de uma tabela.
+                Cada linha da tabela descreve uma única ocorrência de entidade no interior do conjunto de entidades.
+            </p>
+
+            <h3 id="outros">
+
+                Chaves
+            </h3>
+            <p>
+
+                As tabelas relacionam-se umas as outras através de chaves. Uma chave é um conjunto de um ou mais
+                atributos que determinam a unicidade de cada registro. A unicidade dos registros, determinada por sua
+                chave, também é fundamental para a criação dos índices.
+            </p>
+            <p>
+
+                A coluna de identificação em uma tabela é chamada de chave ou chave primária. Uma chave também pode
+                consistir em múltiplas colunas. Por exemplo, podemos refirir a um registro específico combinando os
+                campos correpondentes a ele, mas não tendo a garantia de ser única.
+            </p>
+            <p>
+
+                Temos dois tipos de chaves:
+            </p>
+            <p>
+
             <ul>
-                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                <li>Donec id elit non mi porta gravida at eget metus.</li>
-                <li>Nulla vitae elit libero, a pharetra augue.</li>
+                <li>
+
+                    <strong>Chave primária: </strong> <em> (PK – Primary Key)</em> é a chave que identifica cada
+                    registro dando-lhe unicidade. A
+                    chave primária nunca se repetirá.
+                </li>
+                <li>
+                    <strong> Chave Estrangeira: </strong> <em> (FK – Foreign Key)</em>
+                    é a chave formada através de um relacionamento com a chave
+                    primária de outra tabela. Define um relacionamento entre as tabelas e pode ocorrer repetidas vezes.
+                    Caso a chave primária seja composta na origem, a chave estrangeira também o será.
+                </li>
             </ul>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-            <ol>
-                <li>Vestibulum id ligula porta felis euismod semper.</li>
-                <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-                <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-            </ol>
-            <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+            </p>
+            <h3>
+                Índices
+            </h3>
+            <p>
+
+                O índice é responsável por apontar para o local onde encontraremos a linha que estamos pesquisando, ou
+                seja, é uma disposição ordenada utilizada para acessar logicamente as linhas de uma tabela. Um exemplo
+                de índice, seria o índice de um livro, onde você iria pesquisar o assunto que está querendo ler e iria
+                diretamente para a página que está sendo demonstrada lá.
+            </p>
+            <p>
+
+                Olhando pelo lado conceitual do BDR, é composto de uma chave de índice e de um conjunto de ponteiros.
+                Cada chave aponta para a localização dos dados identificados por ela.
+            </p>
+            <h3>
+                Relacionamentos
+            </h3>
+            <p>
+
+                Os relacionamentos são associações entre as entidades. As entidades que participam de um relacionamento
+                são também conhecidas como participantes e cada relacionamento é identificado por um nome que o
+                descreve. Utiliza-se o verbo na voz ativa ou passiva. Exemplo: um ALUNO
+                <strong><em>frequenta</em></strong> uma TURMA, um
+                PROFESSOR <strong><em>ensina</em></strong> uma TURMA, um DEPARTAMENTO <strong><em>emprega
+                    </em></strong>um
+                PROFESSOR.
+            </p>
+            <p>
+                Os relacionamento estão sempre em ambas direções:
+            <ul>
+                <li>
+                    Um CLIENTE pode gerar muitas FATURAS;
+                </li>
+                <li>
+                    Cada FATURA é gerada por apenas um CLIENTE.
+                </li>
+            </ul>
+
+            Existem relacionamentos dos seguintes tipos:
+            <ul>
+                <li>
+
+                    <strong> Um para um (1 para 1) </strong>– indica que as tabelas têm relação unívoca entre si. Você
+                    escolhe qual tabela
+                    vai receber a chave estrangeira;
+                </li>
+                <li>
+                    <strong> Um para muitos (1 para N) </strong>– a chave primária da tabela que tem o lado 1 vai para a
+                    tabela do lado N.
+                    No lado N ela é chamada de chave estrangeira;
+
+                </li>
+                <li>
+                    <strong>Muitos para muitos (N para N)</strong> – quando tabelas têm entre si relação n..n, é
+                    necessário criar uma
+                    nova tabela com as chaves primárias das tabelas envolvidas, ficando assim uma chave composta, ou
+                    seja, formada por diversos campos-chave de outras tabelas. A relação então se reduz para uma relação
+                    1..n, sendo que o lado n ficará com a nova tabela criada.
+                </li>
+            </ul>
+            </p>
         </div><!-- /.blog-post -->
 
     </main>
+    <div class="jumbotron jumbotron-fluid ">
+        <div class="container" id="mais">
+            <h2 id="links-para-maiores-detalhes">Conteúdo</h2>
+
+            <p> <span>Photo by <a
+                        href="https://unsplash.com/@benjaminlehman?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">benjamin
+                        lehman</a> on <a
+                        href="https://unsplash.com/s/photos/database?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+            </p>
+            <p>Ícones
+                :<span>
+                    <a href="https://fontawesome.com/">Font Awesome</a></p>
+            </span>
+            <ul>
+                <li><i class="fas fa-server"> f233</i></li>
+            </ul>
+            <p>Conteudo detalhado nos links:</p>
+            <ul>
+                <li>
+                    <p><a href="https://sites.google.com/site/uniplibancodedados1/aulas/aula-1---introducao">Link 1</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://www.diegomacedo.com.br/fundamentos-da-administracao-de-dados-tabelas-entidades-relacao-colunas-atributos-linhas-registros-tuplas-indices-chaves-e-relacionamentos/#:~:text=Tabelas%20%2F%20Entidades%20%2F%20Rela%C3%A7%C3%A3o,e%20colunas%20com%20seus%20dados.">Link
+                            2</a></p>
+                </li>
+                <li>
+                    <p> BANCO DE DADOS. In: WIKIPÉDIA, a enciclopédia livre. Flórida: Wikimedia Foundation, 2020.
+                        Disponível em:
+                        <a href="https://pt.wikipedia.org/w/index.php?title=Banco_de_dados&amp;oldid=59370999">link</a>.
+                        Acesso
+                        em: 17 set. 2020.</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
     <footer class="container p-5 text-center">
         <footer>&copy; 2020. TODOS OS DIREITOS RESERVADOS.</footer>
+        <p>Evandro S.</p>
     </footer>
 
     <!-- Optional JavaScript -->
